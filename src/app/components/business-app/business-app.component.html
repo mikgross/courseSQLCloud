@@ -1,2 +1,23 @@
-<p>business-app works!</p>
+
+
+<div class="loading" *ngIf="!data">
+    <img src="http://www.demilked.com/magazine/wp-content/uploads/2016/06/gif-animations-replace-loading-screen-14.gif">
+    <p>Retrieving data from Cloud SQL...</p>
+</div>
+<div class="data" *ngIf="data">
+    <table>
+        <tr>
+            <th>Company Name</th>
+            <th>Employees</th>
+            <th>Result 2017</th>
+        </tr>
+        <tr *ngFor="let company of data | slice:0:100; let i = index">
+            <td>{{company.empresa}}</td>
+            <td>{{company.empleados | number:'1.0-0'}}</td>
+            <td>EUR {{company.res_2017 | number:'1.0-0'}}</td>
+        </tr>
+    </table>
+</div>
+
+
 <button (click)="logout()">Sign-out</button>

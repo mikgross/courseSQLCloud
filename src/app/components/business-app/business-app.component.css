@@ -1,0 +1,50 @@
+table {
+    width: 100%;
+}
+
+button {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background: #f44c4c;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.loading {
+
+    width: 444px;
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 2px lightgrey;
+
+}
+
+.loading p {
+    font-family: monospace;
+    font-size: 20px;
+    color: #626262;
+}
+
+.loading img {
+    width: 255px;
+}
+
+.data {
+    font-family: monospace;
+}
+
+th {
+    font-size: 17px;
+    text-align: center;
+    padding: 10px 0;
+    color: white;
+    background-color: #4a87ff;
+}
